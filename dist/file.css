@@ -8,8 +8,13 @@
 	display: block;
 }
 
-.fs-file-input * {
+.fs-file-input,
+.fs-file-input .material-icons {
 	line-height: 30px;
+}
+
+.fs-file-input .material-icons {
+	font-size: 22px;
 }
 
 .fs-file-input md-icon {
