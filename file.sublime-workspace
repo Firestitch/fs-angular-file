@@ -520,13 +520,26 @@
 	"buffers":
 	[
 		{
-			"contents": "(function () {\n    'use strict';\n\n    angular.module('fs-angular-file',['ngFileUpload'])\n    .directive('fsFile', function($location) {\n        return {\n            restrict: 'A',\n            scope: {\n               file: \"=?fsFile\"\n            },\n\n            link: function($scope, element, attrs, ctrl) {\n                    \n                var el = angular.element(element);\n\n                el.append('<div class=\"fs-file-input\" ngf-select=\"upload($file)\"><md-icon>file_upload</md-icon></div>')\n                .append('<div class=\"md-errors-spacer\"></div>');\n\n                $compile();\n\n                $scope.$watch('file',function(file) {\n\n                    if(file && file.name) {\n                        el.addClass('md-input-has-value');\n                    }\n                });\n\n                $scope.upload = function(file) {\n\n                    if(file) {\n                        $scope.file = file;\n                    }\n                }\n                \n            }\n        };\n    });\n})();",
 			"file": "src/app/scripts/directives/directive.js",
-			"file_size": 1025,
-			"file_write_time": 131116942005678015,
 			"settings":
 			{
-				"buffer_size": 1017,
+				"buffer_size": 1939,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/app/scripts/controllers/demo.js",
+			"settings":
+			{
+				"buffer_size": 255,
+				"line_ending": "LFCR"
+			}
+		},
+		{
+			"file": "src/app/views/demo.html",
+			"settings":
+			{
+				"buffer_size": 520,
 				"line_ending": "Windows"
 			}
 		},
@@ -547,18 +560,10 @@
 			}
 		},
 		{
-			"file": "src/app/views/demo.html",
-			"settings":
-			{
-				"buffer_size": 374,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "src/app/index.html",
 			"settings":
 			{
-				"buffer_size": 2249,
+				"buffer_size": 2321,
 				"line_ending": "Windows"
 			}
 		},
@@ -566,23 +571,15 @@
 			"file": "src/bower.json",
 			"settings":
 			{
-				"buffer_size": 438,
+				"buffer_size": 470,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/app/scripts/app.js",
-			"settings":
-			{
-				"buffer_size": 620,
-				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "src/app/styles/directives/file.css",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 291,
 				"line_ending": "Windows"
 			}
 		}
@@ -635,6 +632,7 @@
 	],
 	"file_history":
 	[
+		"/C/Projects/fs-angular-file/src/app/scripts/app.js",
 		"/C/Projects/fs-angular-file/src/package.json",
 		"/C/Projects/spec/frontend/app/views/directives/nav.html",
 		"/C/Projects/spec/frontend/app/views/taskentry.html",
@@ -761,8 +759,7 @@
 		"/C/Projects/spec/frontend/app/scripts/controllers/login.js",
 		"/C/Projects/spec/frontend/app/scripts/services/access.js",
 		"/C/Projects/spec/frontend/app/scripts/controllers/elementsupdate.js",
-		"/C/Projects/spec/frontend/app/views/elementsupdate.html",
-		"/C/Projects/spec/framework/views/article/categorylist_view.inc"
+		"/C/Projects/spec/frontend/app/views/elementsupdate.html"
 	],
 	"find":
 	{
@@ -1119,7 +1116,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1128,15 +1125,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1017,
+						"buffer_size": 1939,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								594,
-								594
+								1045,
+								1045
 							]
 						],
 						"settings":
@@ -1149,11 +1146,67 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "src/app/scripts/controllers/demo.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								95
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/app/views/demo.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								520,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "bower.json",
 					"semi_transient": false,
 					"settings":
@@ -1183,7 +1236,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "src/grunt/package.js",
 					"semi_transient": false,
 					"settings":
@@ -1209,44 +1262,16 @@
 						"translation.y": 85.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "src/app/views/demo.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 374,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								180,
-								180
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "src/app/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2249,
+						"buffer_size": 2321,
 						"regions":
 						{
 						},
@@ -1267,60 +1292,30 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "src/bower.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 438,
+						"buffer_size": 470,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								85,
-								85
+								470,
+								470
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/app/scripts/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 620,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								109,
-								109
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -1336,26 +1331,27 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 291,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								291,
+								291
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1410,16 +1406,24 @@
 		"selected_items":
 		[
 			[
+				"appjs",
+				"src\\app\\scripts\\app.js"
+			],
+			[
+				"bower",
+				"src\\bower.json"
+			],
+			[
+				"demjs",
+				"src\\app\\scripts\\controllers\\demo.js"
+			],
+			[
 				"inhtml",
 				"src\\app\\index.html"
 			],
 			[
 				"demotm",
 				"src\\app\\views\\demo.html"
-			],
-			[
-				"appjs",
-				"src\\app\\scripts\\app.js"
 			],
 			[
 				"taskentryhtml",
@@ -1782,10 +1786,6 @@
 				"frontend\\app\\scripts\\controllers\\projectspecs.js"
 			],
 			[
-				"bower",
-				"frontend\\bower.json"
-			],
-			[
 				"dashboa",
 				"frontend\\app\\scripts\\controllers\\dashboard.js"
 			],
@@ -1916,10 +1916,6 @@
 			[
 				"eventcompl",
 				"backend\\models\\complex\\event_complex_model.inc"
-			],
-			[
-				"prjectshtml",
-				"frontend\\app\\views\\projectscenario.html"
 			]
 		],
 		"width": 0.0
@@ -1927,9 +1923,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "validate",
+		"last_filter": "boile",
 		"selected_items":
 		[
+			[
+				"boile",
+				"C:\\Projects\\boilerplate\\boilerplate.sublime-workspace"
+			],
+			[
+				"boil",
+				"C:\\Projects\\boilerplate\\boilerplate.sublime-workspace"
+			],
 			[
 				"validate",
 				"C:\\Projects\\fs-angular-validate\\validate.sublime-workspace"
@@ -2017,10 +2021,6 @@
 			[
 				"spec",
 				"C:\\Projects\\spec\\spec.sublime-workspace"
-			],
-			[
-				"boil",
-				"C:\\Projects\\boilerplate\\boilerplate.sublime-workspace"
 			],
 			[
 				"ser",
@@ -2173,10 +2173,6 @@
 			[
 				"dedn",
 				"C:\\Projects\\dedon\\dedon.sublime-workspace"
-			],
-			[
-				"boile",
-				"C:\\Projects\\boilerplate\\boilerplate.sublime-workspace"
 			],
 			[
 				"boi",

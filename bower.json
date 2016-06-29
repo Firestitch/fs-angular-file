@@ -3,7 +3,7 @@
   "description": "",
   "main": [
     "dist/file.js",
-    "dist/css.js"
+    "dist/file.css"
   ],
    "dependencies": {
     "ng-file-upload": ">= 12.0.4"
