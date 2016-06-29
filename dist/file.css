@@ -1,0 +1,22 @@
+
+.fs-file-input {
+	height: 30px;
+	width: 100%;
+	min-width: 182px;
+	border-bottom: 1px solid #E1E1E1;
+	cursor: pointer;
+	display: block;
+}
+
+.fs-file-input * {
+	line-height: 30px;
+}
+
+.fs-file-input md-icon {
+	float: right;
+}
+
+.fs-file-input md-icon.clear {
+	z-index: 10;
+	position: relative;
+}
