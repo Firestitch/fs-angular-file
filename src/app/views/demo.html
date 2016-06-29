@@ -1,0 +1,46 @@
+<md-input-container>
+    <label>Full Name</label>
+    <input
+        type="text"
+        ng-model="name">
+</md-input-container>
+
+<md-input-container fs-file="file">
+    <label>File Upload</label>
+</md-input-container>
+
+
+<h3>File</h3>
+<div>Mame: {{file.name}}</div>
+<div>Last Modified: {{file.lastModified}}</div>
+<div>Last Modified Date: {{file.lastModifiedDate}}</div>
+<div>Size: {{file.size}}</div>
+<div>Type: {{file.type}}</div>
+
+<br><br>
+<mb-button ng-click="upload()" class="md-raised md-accent">Upload</mb-button>
+
+<style>
+.fs-file-input {
+	height: 30px;
+	width: 100%;
+	min-width: 182px;
+	border-bottom: 1px solid #E1E1E1;
+	cursor: pointer;
+	display: block;
+}
+
+.fs-file-input * {
+	line-height: 30px;
+}
+
+.fs-file-input md-icon {
+	float: right;
+}
+
+.fs-file-input md-icon.clear {
+	z-index: 10;
+	position: relative;
+}
+
+</style>
